@@ -1,0 +1,855 @@
+:root {
+  /* COLORS */
+  --green: #4E7141; /*158467*/
+  --broken-white: #EEF2E6;
+  --purple-blue: #333568;
+  --orange: #f26f20;
+  --white: #fff;
+  --dark-white: #ddd;
+  --grey: #f1f1f1;
+  --black: #000000;
+
+  /* FONT SIZES */
+  --small: 1.2rem;
+  --medium: 1.5rem;
+  --large: 2.5rem;
+
+  /* RESPONSIVE FONT SIZES */
+  --small-resp: 1vw;
+  --normal-resp: 2vw;
+  --medium-resp: 2.5vw;
+  --large-resp: 3vw;
+}
+
+body {
+  font-family: 'Arial'
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+#title {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+/* --------------------- NAV BAR ---------------------- */
+.navbContainer {
+  padding: 1% 10%;
+}
+
+.navbar {
+  padding-bottom: 0.5rem;
+}
+
+.logo-navbar {
+  width: 5em;
+}
+
+.navbar-brand {
+  font-family: 'Arial'
+  font-size: var(--medium);
+  font-weight: bold;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: var(--small);
+  font-family: 'Arial'
+  font-weight: 100;
+}
+
+/* --------------------- SECTION 1, KIJK LIVE MEE ---------------------- */
+#live {
+  background-color: var(--broken-white);
+}
+
+.liveContainer {
+  padding: 5% 0.5% 0 0;
+}
+
+.embed-responsive-item {
+  max-height: 60%;
+  max-width: 60%;
+  margin-left: 20%;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+
+h1 {
+  color: var(--purple-blue);
+  font-weight: 800;
+  font-size: var(--large);
+  text-align: center;
+}
+
+/* Section 2 */
+#howDoesItWorks {
+  background-color: var(--green);
+  padding-bottom: 10%;
+}
+
+.howContainer {
+  padding: 5% 0.5% 5% 0;
+}
+
+h2 {
+  font-size: var(--large);
+  color: var(--white);
+  text-align: center;
+}
+
+/* --------------------- CAROUSEL, HOE WERKT HET ---------------------- */
+.carouselContainer {
+  background-color: var(--broken-white);
+  width: 60%;
+  margin-left: 20%;
+  border-radius: 15px;
+}
+
+.carousel-control-prev-icon {
+  background-color: var(--purple-blue);
+}
+
+.carousel-control-next-icon {
+  background-color: var(--purple-blue);
+}
+
+.parRight {
+  /* Make a responsive fontsize */
+  font-size: var(--normal-resp);
+  text-align: left;
+  max-width: 30%;
+  float: right;
+  margin-right: 15%;
+  margin-top: 24%;
+  color: var(--purple-blue);
+}
+
+.parLeft {
+  /* Make a responsive fontsize */
+  font-size: var(--normal-resp);
+  text-align: left;
+  max-width: 30%;
+  float: inherit;
+  margin-left: 20%;
+  margin-top: 24%;
+  color: var(--purple-blue);
+}
+
+.parLeftJeej {
+  /* Make a responsive fontsize */
+  font-size: var(--normal-resp);
+  text-align: left;
+  max-width: 40%;
+  float: inherit;
+  margin-left: 20%;
+  margin-top: 18%;
+  color: var(--purple-blue);
+}
+
+.carouselImagePlant {
+  /* Make image responsive */
+  max-width: 20%;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  margin-left: 20%;
+  float: left;
+}
+
+.carouselImageGrowth {
+  /* Make image responsive */
+  max-width: 20%;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  margin-right: 20%;
+  float: right;
+}
+
+.carouselImageTrade {
+  /* Make image responsive */
+  max-width: 20%;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  margin-left: 20%;
+  float: left;
+}
+
+.carouselImageExcited {
+  /* Make image responsive */
+  max-width: 20%;
+  height: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  margin-right: 15%;
+  float: right;
+}
+
+/* --------------------- FORM, RESERVEER EEN STEKJE ---------------------- */
+
+/* Button used to open the contact form*/
+.open-button {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  z-index: 9;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid var(--broken-white);
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  max-height: 870px;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=text] {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container input[type=date], .form-container input[type=date] {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container input[type=tel], .form-container input[type=tel] {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container input[type=email], .form-container input[type=email] {
+  width: 100%;
+  height: 20%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=text]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container input[type=date]:focus, .form-container input[type=date]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container input[type=tel]:focus, .form-container input[type=tel]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container input[type=email]:focus, .form-container input[type=email]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+/* Set a style for the reservation button */
+.form-container .btn {
+  background-color: var(--green);
+  color: var(--white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+/* Give close button a color */
+.form-container .cancel {
+  background-color: var(--orange);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+@media(min-width: 520px){
+  .form-container{
+    max-width: 490px;
+  }
+}
+
+@media(min-width: 368px){
+  .container{
+    max-width: 320px
+  }
+}
+
+/* --------------------- SECTION 3, VISIE ---------------------- */
+#vision {
+  background-color: var(--broken-white);
+}
+
+.visionCards {
+  padding: 4%;
+}
+
+/* VISIE */
+.heartbeatImage {
+  width: 12em;
+  padding-top: 10%;
+
+}
+
+.planetEarthImage {
+  width: 12em;
+  padding-top: 10%;
+}
+
+.supportImage {
+  width: 12em;
+  padding-top: 10%;
+}
+
+h3 {
+  font-size: var(--medium);
+  padding-top: 5%;
+  color: var(--purple-blue);
+}
+
+h4 {
+  font-size: var(--medium);
+  padding-top: 5%;
+  color: var(--purple-blue);
+}
+
+h5 {
+  font-size: var(--medium);
+  padding-top: 5%;
+  color: var(--purple-blue);
+}
+
+.parVitaliteit {
+  text-align: left;
+  padding: 8% 0 0 3%;
+}
+
+.parDuurzamheid {
+  text-align: left;
+  padding: 4% 0 0 3%;
+}
+
+.parSamenwerken {
+  text-align: left;
+  padding: 8% 0 0 3%;
+}
+
+/* --------------------- CARD FLIP, PIJLERS ---------------------- */
+
+/* The flip card container  */
+.flip-card {
+  background-color: transparent;
+  margin: auto;
+  width: 300px;
+  height: 300px;
+  border: 1px solid var(--grey);
+  perspective: 1000px;
+}
+
+/*position the front and back side */
+.flip-card-inner {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip*/
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  /* background-color: #bbb; */
+  color: var(--black);
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: var(--purple-blue);
+  color: var(--white);
+  transform: rotateY(180deg);
+}
+
+/* Footer */
+.container-footer{
+  width: 100%;
+}
+
+.row{
+  width: 100%;
+}
+
+.footer {
+  background-color: var(--green);
+}
+
+.row-socials{
+
+}
+
+.p-follow-us{
+  margin-left: 1.5em;
+  color: var(--white);
+
+}
+
+.footer-icon-1 > a{
+  text-decoration: none;
+}
+
+
+
+.youtube-icon{
+  width: 2.5em;
+  margin-top: 0.7em;
+  margin-left: 2.5em;
+  margin-bottom: 1em;
+
+}
+
+.instagram-icon{
+width: 2em;
+margin-left: 0.5em;
+margin-bottom: 1em;
+
+
+}
+
+.facebook-icon{
+width: 2em;
+margin-left: 0.5em;
+margin-bottom: 1em;
+
+}
+
+.twitter-icon{
+width: 2em;
+margin-left: 0.5em;
+margin-bottom: 1em;
+
+}
+
+
+
+.footerImage2 {
+  /* width: 60rem; */
+}
+
+
+
+
+
+
+/* --------------------- WORKSHOP PAGE ---------------------- */
+
+
+/* Agenda content */
+#agendaContent {
+  background-color: var(--broken-white);
+}
+
+/* > = all the directive divs in the wrapper */
+.wrapper>div {
+  padding: 1em;
+}
+
+/* Grid */
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1em;
+  justify-items: stretch;
+}
+
+.header {
+  grid-column: 1/3;
+}
+
+.filter {
+  grid-column: 0/3;
+  grid-row: 3/3;
+}
+
+/* .containerFilter{
+  background-color: var(--orange);
+  border-radius: 1.2em;
+}
+
+.filterContent{
+  padding-left: 1.5em;
+  padding-top: 2em;
+
+} */
+.content {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.workshopImage {
+  width: 80%;
+  height: auto;
+}
+
+.parWorkshops {
+  font-size: var(--small-resp);
+}
+
+.h1Workshops {
+  font-size: var(--large-resp);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.h2Filter {
+  font-size: var(--normal-resp);
+  padding-top: 1em;
+}
+
+.h3Workshops {
+  font-size: var(--medium-resp);
+}
+
+.containerImage {
+  background-color: var(--white);
+}
+
+.containerContent {
+  background: var(--white);
+}
+
+/* --------------------- FORM, FILTER ---------------------- */
+
+/* Button used to open the contact form*/
+.open-button2 {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  /* position: fixed; */
+  position: absolute;
+  bottom: 313px;
+  left: 35px;
+  width: 327px;
+  z-index: 9;
+}
+
+/* The popup form - hidden by default */
+.form-popup2 {
+  display: none;
+  position: absolute;
+  top: 550px;
+  left: 35px;
+
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container2 {
+  max-width: 400px;
+  max-height: 870px;
+  padding: 10px;
+  background-color: var(--white);
+}
+
+/* Full-width input fields */
+.form-container2 input[type=text], .form-container2 input[type=text] {
+  width: 100%;
+  height: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container2 input[type=checkbox], .form-container2 input[type=checkbox] {
+  /* width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey); */
+}
+
+/* When the inputs get focus, do something */
+.form-container2 input[type=text]:focus, .form-container2 input[type=text]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container2 input[type=checkbox]:focus, .form-container2 input[type=checkbox]:focus {
+  /* background-color: var(--dark-white);
+  outline: none; */
+}
+
+.searchTitel{
+  padding-top: 0.8em;
+}
+
+.checkboxes {
+  padding-bottom: 1em;
+}
+
+/* Give close button a color */
+.form-container2 .cancel2 {
+  background-color: var(--orange);
+}
+
+/* Add some hover effects to buttons */
+.form-container2 .btn2:hover, .open-button2:hover {
+  opacity: 1;
+}
+
+/* --------------------- FORM, MELD JE AAN ---------------------- */
+
+/* Button used to open the contact form*/
+.open-button3 {
+  background-color: var(--orange);
+  color: var(--white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 853px;
+  right: 670px;
+  width: 150px;
+  border-radius: 1em;
+  z-index: 9;
+}
+
+/* The popup form - hidden by default */
+.form-popup3 {
+  display: none;
+  position: fixed;
+  top: 150px;
+  right: 35px;
+  z-index: 9;
+
+}
+
+/* Add styles to the form container */
+.form-container3 {
+  max-width: 400px;
+  max-height: 870px;
+  padding: 10px;
+  background-color: var(--green);
+  color: var(--white);
+
+}
+
+/* Full-width input fields */
+.form-container3 input[type=text], .form-container3 input[type=text] {
+  width: 100%;
+  height: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container3 input[type=email], .form-container3 input[type=email] {
+  width: 100%;
+  height: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+.form-container3 input[type=number], .form-container3 input[type=number] {
+  width: 100%;
+  height: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: var(--grey);
+}
+
+/* When the inputs get focus, do something */
+.form-container3 input[type=text]:focus, .form-container3 input[type=text]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container3 input[type=email]:focus, .form-container3 input[type=email]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+.form-container3 input[type=number]:focus, .form-container3 input[type=number]:focus {
+  background-color: var(--dark-white);
+  outline: none;
+}
+
+/* Set a style for the reservation button */
+.form-container3 .btn3 {
+  background-color: var(--purple-blue);
+  color: var(--white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 0.8;
+
+
+}
+
+/* Give close button a color */
+.form-container3 .cancel3 {
+  background-color: var(--white);
+  color:  var(--purple-blue);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+
+
+}
+
+/* Add some hover effects to buttons */
+.form-container3 .btn3:hover, .open-button3:hover {
+  opacity: 1;
+}
+
+
+
+
+/* --------------------- CONTACT PAGE ---------------------- */
+.p-contact{
+  color: var(--purple-blue);
+  font-weight: bold;
+}
+
+.header-contact-page {
+  text-align: left;
+  padding-top: 1.5em;;
+  padding-left: 1em;
+}
+
+.hr-contact{
+  width: 59em;
+  margin-left: 2.5em;
+  color: var(--purple-blue);
+
+}
+
+.body-contact{
+  background-color: var(--broken-white);
+}
+
+
+.wrapper-contact{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-row-gap: 1em;;
+  grid-column-gap: 1em;
+}
+
+.location-header{
+  justify-content: flex-start;
+    grid-column: 1/3;
+
+}
+
+.google-maps-location{
+  grid-column: 2/3;
+  grid-row: 2/3;
+  padding-right: 1em;
+
+}
+
+.responsive-google-maps{
+  /* text-align: center; */
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%
+  padding-bottom: 5em;
+  border-radius: 5px;
+}
+
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 2.4em;
+  padding-bottom: 2em;
+}
+
+.google-maps-location > ul{
+  list-style-type: none;
+}
+
+/* .wrapper-contact > div{
+  background: #eee;
+  padding:1em;
+}
+
+.wrapper-contact > div:nth-child(odd){
+  background: var(--dark-white);
+} */

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Workshops</title>
+
+
+  <!-- Favicon -->
+  <link
+    href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAL72LABtjhwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiIgAAAAAAAiIiIAAAAAACIiIgAAAAAAIiIiAAAAAAAiIiIAAAAAAiIiIiAAAAACIiIiIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERAAAAAAAAABEQAAAAAAAAAAAAABEQAAAAAAAAAREAAAAAAAAAAAD4HwAA+B8AAPAPAADwDwAA8A8AAPAPAADgBwAA4AcAAOAHAAD+/wAAjv8AAAV/AACDhwAAx4MAAP/BAAD/4wAA"
+    rel="icon" type="image/x-icon" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/styles.css">
+
+</head>
+
+<body>
+  <section id="title">
+    <div class="container-fluid navbContainer">
+
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="index.html"> <img class="logo-navbar" src="assets/plantswap-logo-white.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler01" aria-controls="navbarToggler01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler01">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="">Verzorging</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="workshops.html">Workshops</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Agenda -->
+  <section id="agendaContent">
+
+    <div class="wrapper">
+
+      <div class="header">
+        <h1 class="h1Workshops">Agenda</h1>
+      </div>
+
+      <!-- Filter button -->
+      <div class="filter">
+        <div class="containerFilter">
+
+          <!-- A button to open the popup form -->
+          <button class="open-button2" onclick="openForm2()">Filter</button>
+          <!-- The form -->
+          <div class="form-popup2" id="myForm2">
+            <form action="/action_page.php" class="form-container2">
+
+              <div class="searchTitel">
+                <label for="text"><b>Zoekopdracht</b></label>
+                <input type="text" placeholder="Zoeken" name="zoeken" required>
+              </div>
+
+              <p>Filter op maand:</p>
+              <div class="checkboxes">
+                <input type="checkbox" id="jan" name="januari" value="Januari">
+                <label for="januari"> januari</label><br>
+
+                <input type="checkbox" id="feb" name="februari" value="Februari">
+                <label for="februari"> februari</label><br>
+
+                <input type="checkbox" id="mar" name="maart" value="Maart">
+                <label for="maart"> maart</label><br>
+
+                <input type="checkbox" id="apr" name="april" value="April">
+                <label for="april"> april</label><br>
+
+                <input type="checkbox" id="mei" name="mei" value="Mei">
+                <label for="mei"> mei</label><br>
+
+                <input type="checkbox" id="jun" name="juni" value="Juni">
+                <label for="juni"> juni</label><br>
+
+                <input type="checkbox" id="jul" name="juli" value="Juli">
+                <label for="juli"> juli</label><br>
+
+                <input type="checkbox" id="aug" name="augustus" value="Augustus">
+                <label for="augustus"> augustus</label><br>
+
+                <input type="checkbox" id="sep" name="september" value="September">
+                <label for="september"> september</label><br>
+
+                <input type="checkbox" id="okt" name="oktober" value="Oktober">
+                <label for="oktober"> oktober</label><br>
+
+                <input type="checkbox" id="nov" name="november" value="November">
+                <label for="november"> november</label><br>
+
+                <input type="checkbox" id="dec" name="december" value="December">
+                <label for="december"> december</label><br>
+              </div>
+
+              <button type="button2" class="btn cancel2" onclick="closeForm2()">Close</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maand -->
+      <div class="content">
+        <div class="">
+          <h3 class="h3Workshops">November</h3>
+          <hr>
+        </div>
+      </div>
+
+
+      <!-- Workshop 1 -->
+      <div class="content">
+        <div class="containerImage">
+
+          <img class="workshopImage " src="assets/workshops.jpeg" alt="">
+
+        </div>
+
+        <div class="containerContent">
+          <h3 class="h3Workshops">Maak een zelfvoorzienend ecosysteem</h3>
+          <p class="parWorkshops">Wanneer: 04/11/2022 <br>Hoelaat: 14:30 t/m 16:30</p>
+          <p class="parWorkshops">Dames en heren, haal jullie groene vingers maar vast uit de kast!
+            Ook altijd al een zelfvoorzienend ecosysteem willen maken? Meld je dan nu aan met de knop hieronder.</p>
+
+
+          <!-- Filter button -->
+          <div class="filter">
+            <div class="containerFilter">
+
+              <!-- A button to open the popup form -->
+              <button class="open-button3" onclick="openForm3()">Meld je aan!</button>
+              <!-- The form -->
+              <div class="form-popup3" id="myForm3">
+                <form action="/action_page.php" class="form-container3">
+
+                  <div class="searchTitel">
+
+                    <label for="text"><b>Naam</b></label>
+                    <input type="text" placeholder="Voornaam + achternaam" name="name" required>
+
+                    <label for="email"><b>E-mail</b></label>
+                    <input type="email" placeholder="E-mail" name="email" required>
+
+                    <label for="number"><b>E-mail</b></label>
+                    <input type="number" placeholder="Telefoonnummer" name="number" required>
+
+                    <label for="text"><b>Workshop</b></label>
+                    <input type="text" placeholder="Welke workshop?" name="name" required>
+
+                    <button type="submit3" class="btn3">Meld je aan!</button>
+                    <button type="button3" class="btn cancel3" onclick="closeForm3()">Close</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- Workshop 2 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshops1.jpeg" alt="">
+      </div>
+
+      <div class="containerContent">
+        <h3 class="h3Workshops">Hang a plant</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+    <!-- Workshop 3 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop3.png" alt="">
+      </div>
+
+      <div class="containerContent">
+        <h3 class="h3Workshops">Terrarium Therapy</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+    <!-- Workshop 4 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop4.jpeg" alt="">
+      </div>
+
+      <div class="containerContent">
+        <h3 class="h3Workshops">Kweken deze weken</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+    <!-- Maand -->
+    <div class="content">
+      <div class="">
+        <h3 class="h3Workshops">December</h3>
+        <hr>
+      </div>
+    </div>
+
+
+    <!-- Workshop 5 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop8.jpeg" alt="">
+      </div>
+
+      <div class="containerContent">
+        <h3 class="h3Workshops">Cut it</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+    <!-- Workshop 6 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop6.png" alt="">
+      </div>
+      <div class="containerContent">
+        <h3 class="h3Workshops">Droogbloemen</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+    <!-- Workshop 7-->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop7.jpeg" alt="">
+      </div>
+      <div class="containerContent">
+        <h3 class="h3Workshops">HO HO HO,<br>
+          kerstkransen maken doe je zo</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+
+
+    <!-- Workshop 8 -->
+    <div class="content">
+      <div class="containerImage">
+        <img class="workshopImage " src="assets/workshop5.jpeg" alt="">
+      </div>
+      <div class="containerContent">
+        <h3 class="h3Workshops">What is under your christmas tree</h3>
+        <p class="parWorkshops">Hier komt de content van de workshops</p>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-3">
+    <div class="container-footer">
+
+      <div class="row socials">
+
+        <div class="row p-follow-us">
+          <p>Volg Buurtcampus Oost op: </p>
+        </div>
+
+        <div class="col footer-icon-1">
+          <a href="https://www.youtube.com/channel/UCP4o6SLi_oy7sVsodrD3Fxw" target="_blank">  <img class="youtube-icon"src="assets/youtube.png" alt=""> </a>
+          <a href="https://www.instagram.com/buurtcampus_oost/" target="_blank">  <img class="instagram-icon"src="assets/instagram.png" alt=""> </a>
+          <a href="https://www.facebook.com/buurtcampusoost/" target="_blank">  <img class="facebook-icon"src="assets/facebook.png" alt=""> </a>
+          <a href="https://twitter.com/buurtcampus/" target="_blank">  <img class="twitter-icon"src="assets/twitter-sign.png" alt=""> </a>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col footer">
+          <img class="img-fluid footerImage" src="assets/buurtCampusFooter.svg" alt="footerBuurtCampus">
+        </div>
+        <div class="col footer">
+          <img class="img-fluid footerImage2" src="assets/buurtCampusFooter.svg" alt="footerBuurtCampus">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
+
+
+<!-- JS -->
+<script src="styles/script.js"></script>
