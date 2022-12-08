@@ -129,35 +129,45 @@
   <div class="form-popup" id="myForm">
     <form action="/action_page.php" class="form-container">
 
-
-
       <p>Contact gegevens</p>
 
       <label for="email"><b>Naam</b></label>
-      <input type="text" placeholder="Voornaam + achternaam" name="name" required>
+      <input type="text" placeholder="Voornaam + achternaam" name="name" >
 
       <label for="lastName"><b>Welk stekje </b></label>
-      <input type="text" placeholder="Welk stekje wil je reserveren?" name="lastName" required>
+      <input type="text" placeholder="Welk stekje wil je reserveren?" name="lastName" >
 
       <label for="number"><b>Telefoonnummer</b></label>
-      <input type="tel" placeholder="Telefoonnummer" name="number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+      <input type="tel" placeholder="Telefoonnummer" name="number"  >
 
       <label for="email"><b>E-mail</b></label>
-      <input type="email" placeholder="E-mail" name="email" required>
+      <input type="email" placeholder="E-mail" name="email" >
 
       <label for="plant"><b>Jouw stekje</b></label>
-      <input type="text" placeholder="Welk stekje ruil je om?" name="plant" required>
+      <input type="text" placeholder="Welk stekje ruil je om?" name="plant">
 
       <label for="pickUp"><b>Wanneer ophalen</b></label>
-      <input type="date" placeholder="Wanneer ophalen?" name="pickUp" required>
+      <input type="date" placeholder="Wanneer ophalen?" name="pickUp">
 
-      <button type="submit" class="btn">Reserveer je stekje</button>
+      <button type="button" class="btn" onclick="closeForm()" > Reserveer je stekje </button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-
     </form>
   </div>
 
+  <!-- POP UP AFTER MAKING A RESERVATION -->
+  <div class="reservation active" id="modal">
+<div class="modal-popup">
+  <h5 class="header-reservation-popup">Reservering bevestigd!</h5>
+  <button class="close-button-popup">&times;</button>
+</div>
+    <div class="body-popup">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+  </div>
 
+  <div class="active" id="overlay">
+
+    </div>
 
   <!-- SECTION 3 -->
   <section id="vision">

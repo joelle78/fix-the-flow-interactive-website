@@ -347,6 +347,65 @@ h2 {
   }
 }
 
+ /* POP UP AFTER MAKING A RESERVATION  */
+ .reservation{
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(0);
+   border: 1px solid black;
+   border-radius: 10px;
+   z-index: 10;
+   background-color: white;
+   width: 500px;
+   max-width: 80%;
+ }
+
+ .reservation.active{
+   transform: translate(-50%, -50%) scale(1);
+ }
+
+ .modal-popup{
+   padding-left: 1em;
+   padding-right: 1em;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .body-popup{
+   padding-left: 1em;
+ }
+
+ .close-button-popup{
+   cursor: pointer;
+   border: none;
+   outline: none;
+   background: none;
+ }
+
+ #overlay{
+   position: fixed;
+   /* opacity: 0; */
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, .5);
+   pointer-events: none;
+ }
+
+ #overlay.active{
+   opacity: 1;
+   pointer-events: all;
+ }
+
+
+
+
+
+
+
 /* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
   background-color: var(--broken-white);
@@ -514,19 +573,7 @@ margin-bottom: 1em;
 width: 2em;
 margin-left: 0.5em;
 margin-bottom: 1em;
-
 }
-
-
-
-.footerImage2 {
-  /* width: 60rem; */
-}
-
-
-
-
-
 
 /* --------------------- WORKSHOP PAGE ---------------------- */
 

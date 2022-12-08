@@ -11,6 +11,41 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
+// POP UP FORM AFTER reservation
+const openModalButtons = document.querySelectorAll('[data-model-target]')
+const closeModalButtons = document.querySelectorAll('[data-close-button]')
+const overlay = document.getElementById('overlay')
+
+openModalButtons.forEach(button => {
+  button.addEventlistener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget)
+    openModal(modal)
+  })
+})
+
+closeModalButtons.forEach(button => {
+  button.addEventlistener('click', () => {
+    const modal = button.closest('.modal')
+    closeModal(modal)
+  })
+})
+
+function openModal(modal){
+  if (modal == null) return
+  modal.classList.add('active')
+  overlay.classlist.add('active')
+}
+
+function closeModal(modal){
+  if (modal == null) return
+  modal.classList.remove('active')
+  overlay.classlist.remove('active')
+}
+
+
+
+
+
 // Filter form
 
 function openForm2() {
