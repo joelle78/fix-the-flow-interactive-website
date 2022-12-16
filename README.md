@@ -16,9 +16,7 @@ Corporate identity
 
 <!-- Voeg een mooie poster visual toe 📸 -->
 Wireflow:
-<img src="/assets/wireflow.png" alt="Alt text" title="Optional title">
-
-
+![My Image](assets/wireflow.png)
 
 <!-- Voeg een link toe naar Github Pages 🌐-->
 Mijn Github-pages:
