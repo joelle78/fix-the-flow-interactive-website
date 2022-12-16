@@ -348,7 +348,7 @@ h2 {
 }
 
  /* POP UP AFTER MAKING A RESERVATION  */
- .reservation{
+ /* .reservation{
    position: fixed;
    top: 50%;
    left: 50%;
@@ -387,17 +387,18 @@ h2 {
  #overlay{
    position: fixed;
    /* opacity: 0; */
-   top: 0;
+   /* top: 0;
    left: 0;
    right: 0;
    bottom: 0;
    background-color: rgba(0, 0, 0, .5);
+   backdrop-filter: blur(2px);
    pointer-events: none;
  }
 
  #overlay.active{
    opacity: 1;
-   pointer-events: all;
+   pointer-events: all; */
  }
 
 
@@ -408,11 +409,13 @@ h2 {
 
 /* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
-  background-color: var(--broken-white);
+  var(--broken-white);
+
 }
 
 .visionCards {
   padding: 4%;
+  background-color: var(--broken-white);
 }
 
 /* VISIE */
