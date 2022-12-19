@@ -149,31 +149,27 @@
       <label for="pickUp"><b>Wanneer ophalen</b></label>
       <input type="date" placeholder="Wanneer ophalen?" name="pickUp">
 
-      <button type="button" class="btn" onclick="closeForm()" > Reserveer je stekje </button>
+      <button type="button" class="btn" onclick="openPopup()" > Reserveer je stekje </button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
   </div>
 
   <!-- POP UP AFTER MAKING A RESERVATION -->
-  <!-- <div class="reservation active" id="modal">
+  <div class="reservation active" id="modal">
 <div class="modal-popup">
   <h5 class="header-reservation-popup">Reservering bevestigd!</h5>
-  <button class="close-button-popup">&times;</button>
+  <button class="close-button-popup" onclick="closePopup()" >&times;</button>
 </div>
     <div class="body-popup">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
   </div>
 
-  <div class="active" id="overlay">
-
-    </div> -->
-
   <!-- SECTION 3 -->
   <section id="vision">
 
     <!-- heartbeatImage -->
-    <div class="container-fluid visie">
+
       <div class="row align-items-center">
         <div class="col-lg-4 visionCards">
           <div class="flip-card">
@@ -223,7 +219,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
 
   </section>
@@ -256,6 +252,11 @@
       </div>
     </div>
   </footer>
+
+  <div class="active" id="overlay" onclick="closePopup()">
+
+    </div>
+
 
 </body>
 </html>

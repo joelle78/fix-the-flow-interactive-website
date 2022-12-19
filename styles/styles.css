@@ -348,7 +348,8 @@ h2 {
 }
 
  /* POP UP AFTER MAKING A RESERVATION  */
- /* .reservation{
+ .reservation{
+   display: none;
    position: fixed;
    top: 50%;
    left: 50%;
@@ -385,9 +386,10 @@ h2 {
  }
 
  #overlay{
+   display: none;
    position: fixed;
    /* opacity: 0; */
-   /* top: 0;
+   top: 0;
    left: 0;
    right: 0;
    bottom: 0;
@@ -396,20 +398,15 @@ h2 {
    pointer-events: none;
  }
 
- #overlay.active{
+ #overlay.active {
    opacity: 1;
-   pointer-events: all; */
+   pointer-events: all;
  }
-
-
-
-
-
 
 
 /* --------------------- SECTION 3, VISIE ---------------------- */
 #vision {
-  var(--broken-white);
+  background-color: var(--broken-white);
 
 }
 
@@ -635,8 +632,8 @@ margin-bottom: 1em;
 
 .h1Workshops {
   font-size: var(--large-resp);
+  padding-left: 15em;
   padding-top: 1em;
-  padding-bottom: 1em;
 }
 
 .h2Filter {
@@ -741,18 +738,24 @@ margin-bottom: 1em;
 /* --------------------- FORM, MELD JE AAN ---------------------- */
 
 /* Button used to open the contact form*/
+.button-container{
+  padding-top: 3em;
+}
 .open-button3 {
   background-color: var(--orange);
   color: var(--white);
-  padding: 16px 20px;
+  width: 8vw;
+  height: 3vw;
   border: none;
   cursor: pointer;
-  position: absolute;
-  top: 853px;
-  right: 670px;
-  width: 150px;
+  position: relative;
   border-radius: 1em;
   z-index: 9;
+}
+
+.p-subscribe{
+  padding-top: 0.7em;
+  font-size: 1vw;
 }
 
 /* The popup form - hidden by default */
